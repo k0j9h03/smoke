@@ -36,7 +36,7 @@
 
 
 <div class="content">
-    <h1 style="text-align: center;">그라데이션 스크롤</h1>
+    <h1 style="text-align: center;"></h1>
 </div>
 
 <script>
@@ -94,9 +94,8 @@
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     drawWave({ scrollY, color: "0, 78, 255", offset: 0 }); // 새파란색
+    drawWave({ scrollY, color: "255, 255, 255", offset: 0, blur: 50, alphaFactor: 0.5, blendMode: "lighten" }); // 청록색
     drawWave({ scrollY, color: "255, 0, 156", offset: 40, blur: 50, alphaFactor: 1, blendMode: "lighten" }); // 마젠타
-    drawWave({ scrollY, color: "0, 245, 220", offset: 0, blur: 50, alphaFactor: 1, blendMode: "lighten" }); // 청록색
-
     drawWave({ scrollY, color: "0, 78, 255", offset: 70, blur: 40, alphaFactor: 1, blendMode: "Multiply" }); // 마젠타
 
   }
